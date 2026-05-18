@@ -1,0 +1,69 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "আমি তোমার প্রেমে পড়ে গেছি",
+      "author": "হুমায়ূন আহমেদ",
+      "price": 320,
+      "originalPrice": 380,
+      "discount": 16,
+      "category": "উপন্যাস",
+      "image": "https://i.ibb.co.com/5Y5Z8kX/humayun.jpg",
+      "rating": 4.8,
+      "stock": 45,
+      "description": "হুমায়ূন আহমেদের অমর সৃষ্টি। প্রেম, হাসি আর দুঃখের অপূর্ব মিশ্রণ।"
+    },
+    {
+      "id": 2,
+      "title": "বিজ্ঞানের বিস্ময়",
+      "author": "মুনীর হাসান",
+      "price": 250,
+      "originalPrice": 280,
+      "discount": 11,
+      "category": "বিজ্ঞান",
+      "image": "https://i.ibb.co.com/4qK7vL2/science.jpg",
+      "rating": 4.6,
+      "stock": 30,
+      "description": "শিক্ষার্থীদের জন্য আকর্ষণীয় বিজ্ঞান বই।"
+    },
+    {
+      "id": 3,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "price": 450,
+      "originalPrice": 520,
+      "discount": 13,
+      "category": "Self Help",
+      "image": "https://i.ibb.co.com/3kP8mNv/atomic-habits.jpg",
+      "rating": 4.9,
+      "stock": 25,
+      "description": "ছোট ছোট অভ্যাস বদলে দিতে পারে তোমার পুরো জীবন।"
+    },
+    {
+      "id": 4,
+      "title": "প্যারাডক্সিক্যাল সাজিদ",
+      "author": "জাভেদ আহমেদ",
+      "price": 280,
+      "originalPrice": 280,
+      "discount": 0,
+      "category": "উপন্যাস",
+      "image": "https://i.ibb.co.com/9vX2pLq/paradoxical.jpg",
+      "rating": 4.7,
+      "stock": 60,
+      "description": "হাস্যরস আর দর্শনের অসাধারণ সমন্বয়।"
+    },
+    {
+      "id": 5,
+      "title": "সেই সময়",
+      "author": "সুনীল গঙ্গোপাধ্যায়",
+      "price": 350,
+      "originalPrice": 400,
+      "discount": 12,
+      "category": "উপন্যাস",
+      "image": "https://i.ibb.co.com/7bN3mKp/Sei-Somoy.jpg",
+      "rating": 4.5,
+      "stock": 18,
+      "description": "বাংলার ইতিহাস ও সমাজের চমৎকার চিত্রণ।"
+    }
+  ]
+}
