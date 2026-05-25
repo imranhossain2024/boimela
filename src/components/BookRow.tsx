@@ -1,20 +1,23 @@
-import { BooksResponse } from "../../types/BookTypes";
-import BookDetails from "./BookDetails";
-import FeatureBook from "./FeatureBook";
+import { Book } from "../../types/BookTypes";
+import BookDetails from "../components/BookDetails";
+import FeatureBook from "../components/FeatureBook";
 
-function BookRow({ books }: BooksResponse) {
+function BookRow({
+  book,
+  onToggle,
+}: {
+  book: Book;
+  onToggle: (id: number) => void;
+}) {
   return (
-   <div className="flex bg-red-600 justify-center items-start gap-8 max-w-6xl mx-auto">
-  
-  <div className="">
-    <BookDetails books={books} />
-  </div>
-
-  <div className="">
-    <FeatureBook books={books} />
-  </div>
-
-</div>
+    <div className="flex justify-between w-full">
+      <BookDetails
+        title={book.title}
+        author={book.author}
+        id={book.id}
+      ></BookDetails>
+      <FeatureBook book={book} onToggle={onToggle}></FeatureBook>
+    </div>
   );
 }
 

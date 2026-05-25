@@ -1,19 +1,10 @@
-import { BooksResponse } from "../../types/BookTypes";
+import { Book } from "../../types/BookTypes";
 
-function BookDetails({ books }: BooksResponse) {
+function BookDetails({ title, author }:Book) {
   return (
-    <div className="flex flex-col ">
-      {books.map((book) => {
-        return (
-          <div
-            className="flex-col bg-emerald-400 items-center gap-3.5 justify-end w-full mt-3"
-            key={book.id}
-          >
-            <h3>{book.title}</h3>
-            <p>{book.author}</p>
-          </div>
-        );
-      })}
+    <div className="shadow">
+      <h3 className="text-lg font-semibold">{title}</h3>
+      <p className="text-gray-600">{author}</p>
     </div>
   );
 }
