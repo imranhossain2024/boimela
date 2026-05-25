@@ -1,18 +1,24 @@
-import { BooksResponse } from "../../types/BookTypes";
+import { Star } from "lucide-react";
+import { Book } from "../../types/BookTypes";
 
-function FeatureBook({ books }: BooksResponse) {
+function FeatureBook({
+  book,
+  onToggle,
+}: {
+  book: Book;
+  onToggle: (id: number) => void;
+}) {
+  console.log(`[Rendering FeatureBook] ID: ${book.id} | featureBook: ${book.featureBook}`);
+
   return (
-    <div className="flex flex-col ">
-      {books.map((book) => {
-        return (
-          <div key={book.id}>
-            <p className="flex-col bg-emerald-400 items-center gap-3.5 justify-end w-full mt-3">
-              {book.rating}
-            </p>
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <button onClick={() => onToggle(book.id)} className="cursor-pointer">
+        <Star 
+          color={book.featureBook ? "#22c55e" : "#9ca3af"} 
+          fill={book.featureBook ? "#22c55e" : "transparent"} 
+        />
+      </button>
+    </>
   );
 }
 
